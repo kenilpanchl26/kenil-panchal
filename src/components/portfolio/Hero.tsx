@@ -63,7 +63,8 @@ export function Hero() {
               className="mt-10 flex flex-wrap items-center gap-3"
             >
               <a
-                href="/kenilkumar-panchal-resume.pdf"
+                href="/Kenilkumar Panchal SEO Resume.pdf"
+                download="Kenilkumar Panchal SEO Resume.pdf"
                 className="group inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3.5 text-sm font-medium text-background transition hover:opacity-90"
               >
                 Download Resume
