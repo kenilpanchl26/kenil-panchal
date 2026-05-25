@@ -7,17 +7,17 @@ const timeline = [
     desc: "Master of Computer Applications with focus on web technologies, data analytics and applied SEO research.",
   },
   {
-    year: "2024 — Now",
+    year: "2026 — Now",
     title: "Freelance SEO & Growth Specialist",
     desc: "Ecommerce SEO, technical audits, GA4 implementations and conversion-led content strategy for global brands.",
   },
   {
-    year: "2023",
+    year: "2025",
     title: "WordPress & Shopify Development",
     desc: "Designed and shipped 25+ production websites with on-page SEO, Core Web Vitals and CRO baked in from day one.",
   },
   {
-    year: "2022",
+    year: "2025",
     title: "Started in Digital Marketing",
     desc: "Performance marketing (Meta & Google Ads), social media strategy and the fundamentals of search.",
   },
