@@ -66,7 +66,7 @@ export function Contact() {
               <div className="mt-10 space-y-3">
                 {[
                   { icon: Mail, label: "kenilpanchal55@gmail.com", href: "mailto:kenilpanchal55@gmail.com" },
-                  { icon: MessageCircle, label: "WhatsApp · +91 93139 34819", href: "https://wa.me/919313934819" },
+                  { icon: MessageCircle, label: "WhatsApp · +91 93137 34819", href: "https://wa.me/919313734819" },
                   { icon: Linkedin, label: "linkedin.com/in/kenil-panchal", href: "https://www.linkedin.com/in/kenil-panchal-278991389?utm_source=share_via&utm_content=profile&utm_medium=member_android" },
                   { icon: MapPin, label: "Gujarat, India · Remote worldwide", href: "#" },
                 ].map((c) => {
