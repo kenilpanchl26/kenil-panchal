@@ -3,6 +3,7 @@ import { z } from "zod";
 import { Reveal } from "./Reveal";
 import { Mail, MessageCircle, Linkedin, Twitter, Github, MapPin } from "lucide-react";
 import { toast } from "sonner";
+import emailjs from "@emailjs/browser";
 
 const schema = z.object({
   name: z.string().trim().min(2, "Enter your name").max(100),
@@ -16,7 +17,8 @@ export function Contact() {
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    const fd = new FormData(e.currentTarget);
+    const form = e.currentTarget;
+    const fd = new FormData(form);
     const parsed = schema.safeParse(Object.fromEntries(fd));
     if (!parsed.success) {
       toast.error(parsed.error.issues[0]?.message ?? "Invalid input");
@@ -24,11 +26,18 @@ export function Contact() {
     }
     setLoading(true);
     try {
-      // Simulated submission — wire up to your API/edge function when ready
-      await new Promise((r) => setTimeout(r, 900));
+      await emailjs.sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID || "YOUR_SERVICE_ID",
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "YOUR_TEMPLATE_ID",
+        form,
+        {
+          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "YOUR_PUBLIC_KEY",
+        }
+      );
       toast.success("Message sent. I'll reply within 24 hours.");
-      e.currentTarget.reset();
-    } catch {
+      form.reset();
+    } catch (error) {
+      console.error("EmailJS Error:", error);
       toast.error("Something went wrong. Try WhatsApp instead.");
     } finally {
       setLoading(false);
