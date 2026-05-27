@@ -64,7 +64,7 @@ export function Footer() {
 export function StickyCTA() {
   return (
     <a
-      href="https://wa.me/919313934819"
+      href="https://wa.me/919313734819"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-40 hidden items-center gap-2 rounded-full bg-foreground px-5 py-3 text-sm font-medium text-background shadow-lg shadow-foreground/10 transition hover:opacity-90 md:inline-flex"
