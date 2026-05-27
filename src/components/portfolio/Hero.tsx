@@ -77,7 +77,7 @@ export function Hero() {
                 Book free SEO audit
               </a>
               <a
-                href="https://wa.me/919313934819"
+                href="https://wa.me/919313734819"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-6 py-3.5 text-sm font-medium transition hover:bg-muted"
