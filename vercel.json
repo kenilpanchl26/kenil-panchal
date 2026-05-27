@@ -20,10 +20,6 @@
         {
           "key": "Cache-Control",
           "value": "no-store, no-cache"
-        },
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex"
         }
       ]
     },
