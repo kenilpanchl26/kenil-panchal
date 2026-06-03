@@ -102,7 +102,7 @@ export function Hero() {
                 height={1152}
                 loading="eager"
                 fetchPriority="high"
-                className="h-full w-full object-cover grayscale"
+                className="h-full w-full object-cover"
               />
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-background/80 to-transparent p-5">
                 <div className="glass flex items-center justify-between rounded-2xl border border-border/60 p-3">
