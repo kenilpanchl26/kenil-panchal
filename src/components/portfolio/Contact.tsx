@@ -32,7 +32,7 @@ export function Contact() {
         form,
         {
           publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "YOUR_PUBLIC_KEY",
-        }
+        },
       );
       toast.success("Message sent. I'll reply within 24 hours.");
       form.reset();
@@ -51,7 +51,7 @@ export function Contact() {
           <div className="lg:col-span-5">
             <Reveal>
               <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
-                08 — Contact
+                09 — Contact
               </div>
               <h2 className="mt-4 font-display text-4xl leading-[1.02] md:text-6xl">
                 Let's grow
@@ -59,15 +59,27 @@ export function Contact() {
                 <span className="italic text-muted-foreground">something serious.</span>
               </h2>
               <p className="mt-6 max-w-md text-muted-foreground">
-                Tell me about your product, your current traffic and what success looks
-                like. I reply within 24 hours.
+                Tell me about your product, your current traffic and what success looks like. I
+                reply within 24 hours.
               </p>
 
               <div className="mt-10 space-y-3">
                 {[
-                  { icon: Mail, label: "kenilpanchal55@gmail.com", href: "mailto:kenilpanchal55@gmail.com" },
-                  { icon: MessageCircle, label: "WhatsApp · +91 93137 34819", href: "https://wa.me/919313734819" },
-                  { icon: Linkedin, label: "linkedin.com/in/kenil-panchal", href: "https://www.linkedin.com/in/kenil-panchal-278991389?utm_source=share_via&utm_content=profile&utm_medium=member_android" },
+                  {
+                    icon: Mail,
+                    label: "kenilpanchal55@gmail.com",
+                    href: "mailto:kenilpanchal55@gmail.com",
+                  },
+                  {
+                    icon: MessageCircle,
+                    label: "WhatsApp · +91 93137 34819",
+                    href: "https://wa.me/919313734819",
+                  },
+                  {
+                    icon: Linkedin,
+                    label: "linkedin.com/in/kenil-panchal",
+                    href: "https://www.linkedin.com/in/kenil-panchal-278991389?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+                  },
                   { icon: MapPin, label: "Gujarat, India · Remote worldwide", href: "#" },
                 ].map((c) => {
                   const Icon = c.icon;
@@ -83,7 +95,9 @@ export function Contact() {
                         <Icon className="h-4 w-4" strokeWidth={1.5} />
                       </span>
                       <span className="text-sm">{c.label}</span>
-                      <span className="ml-auto text-muted-foreground transition group-hover:translate-x-0.5">→</span>
+                      <span className="ml-auto text-muted-foreground transition group-hover:translate-x-0.5">
+                        →
+                      </span>
                     </a>
                   );
                 })}

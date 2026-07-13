@@ -27,7 +27,7 @@ export function Testimonials() {
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <Reveal>
           <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
-            07 — Testimonials
+            08 — Testimonials
           </div>
           <h2 className="mt-4 max-w-3xl font-display text-4xl leading-[1.05] md:text-6xl">
             What clients say after the dashboards turn green.
@@ -39,9 +39,7 @@ export function Testimonials() {
             <Reveal key={x.name} delay={i * 0.08}>
               <figure className="flex h-full flex-col rounded-3xl border border-border bg-card p-7">
                 <div className="font-display text-3xl leading-none">"</div>
-                <blockquote className="mt-3 text-base leading-relaxed">
-                  {x.quote}
-                </blockquote>
+                <blockquote className="mt-3 text-base leading-relaxed">{x.quote}</blockquote>
                 <figcaption className="mt-8 flex items-center gap-3 border-t border-border pt-5">
                   <div className="grid h-10 w-10 place-items-center rounded-full bg-foreground text-sm font-medium text-background">
                     {x.name

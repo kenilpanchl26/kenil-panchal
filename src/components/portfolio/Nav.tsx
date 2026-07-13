@@ -5,6 +5,7 @@ const links = [
   { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
   { href: "#work", label: "Case Studies" },
+  { href: "#projects", label: "Projects" },
   { href: "#services", label: "Services" },
   { href: "#blog", label: "Blog" },
   { href: "#contact", label: "Contact" },
@@ -26,14 +27,16 @@ export function Nav() {
       initial={{ y: -40, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${scrolled ? "py-3" : "py-5"
-        }`}
+      className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
+        scrolled ? "py-3" : "py-5"
+      }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 lg:px-8">
         <a
           href="#top"
-          className={`flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium tracking-tight transition-all ${scrolled ? "glass border border-border/60" : ""
-            }`}
+          className={`flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium tracking-tight transition-all ${
+            scrolled ? "glass border border-border/60" : ""
+          }`}
         >
           <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-foreground text-background text-xs font-bold tracking-tight">
             KP
@@ -41,8 +44,9 @@ export function Nav() {
         </a>
 
         <nav
-          className={`hidden items-center gap-1 rounded-full border border-border/60 px-2 py-1.5 text-sm md:flex ${scrolled ? "glass" : "bg-background/40 backdrop-blur"
-            }`}
+          className={`hidden items-center gap-1 rounded-full border border-border/60 px-2 py-1.5 text-sm md:flex ${
+            scrolled ? "glass" : "bg-background/40 backdrop-blur"
+          }`}
         >
           {links.map((l) => (
             <a
@@ -68,9 +72,13 @@ export function Nav() {
           className="rounded-full border border-border p-2.5 md:hidden"
         >
           <div className="flex h-4 w-5 flex-col justify-between">
-            <span className={`h-0.5 w-full bg-foreground transition ${open ? "translate-y-[7px] rotate-45" : ""}`} />
+            <span
+              className={`h-0.5 w-full bg-foreground transition ${open ? "translate-y-[7px] rotate-45" : ""}`}
+            />
             <span className={`h-0.5 w-full bg-foreground transition ${open ? "opacity-0" : ""}`} />
-            <span className={`h-0.5 w-full bg-foreground transition ${open ? "-translate-y-[7px] -rotate-45" : ""}`} />
+            <span
+              className={`h-0.5 w-full bg-foreground transition ${open ? "-translate-y-[7px] -rotate-45" : ""}`}
+            />
           </div>
         </button>
       </div>

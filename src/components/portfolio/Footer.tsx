@@ -9,8 +9,8 @@ export function Footer() {
               Kenilkumar Panchal
             </div>
             <p className="mt-4 max-w-sm text-sm text-muted-foreground">
-              SEO & Digital Marketing Specialist focused on ecommerce growth, technical
-              SEO and conversion-led analytics.
+              SEO & Digital Marketing Specialist focused on ecommerce growth, technical SEO and
+              conversion-led analytics.
             </p>
           </div>
 
@@ -29,16 +29,11 @@ export function Footer() {
             },
           ].map((c) => (
             <div key={c.h} className="md:col-span-2">
-              <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
-                {c.h}
-              </div>
+              <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground">{c.h}</div>
               <ul className="mt-4 space-y-2 text-sm">
                 {c.l.map((x) => (
                   <li key={x}>
-                    <a
-                      href="#"
-                      className="text-foreground/80 transition hover:text-foreground"
-                    >
+                    <a href="#" className="text-foreground/80 transition hover:text-foreground">
                       {x}
                     </a>
                   </li>
@@ -48,9 +43,7 @@ export function Footer() {
           ))}
         </div>
 
-        <div className="font-display text-[14vw] leading-none tracking-tighter">
-          KENIL.
-        </div>
+        <div className="font-display text-[14vw] leading-none tracking-tighter">KENIL.</div>
 
         <div className="mt-6 flex flex-col items-start justify-between gap-3 border-t border-border pt-6 text-xs text-muted-foreground md:flex-row md:items-center">
           <div>© {new Date().getFullYear()} Kenilkumar Panchal. All rights reserved.</div>

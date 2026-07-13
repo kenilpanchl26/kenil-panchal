@@ -39,29 +39,22 @@ export function About() {
                 Marketer's instinct.
               </h2>
               <p className="mt-6 max-w-md text-muted-foreground">
-                I'm Kenilkumar Panchal — an SEO & digital marketing specialist who treats
-                growth as a system. I bridge the gap between development and marketing,
-                shipping clean technical foundations alongside content and analytics that
-                actually move revenue.
+                I'm Kenilkumar Panchal — an SEO & digital marketing specialist who treats growth as
+                a system. I bridge the gap between development and marketing, shipping clean
+                technical foundations alongside content and analytics that actually move revenue.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-2">
-                {[
-                  "WordPress",
-                  "Shopify",
-                  "GA4",
-                  "Search Console",
-                  "Schema",
-                  "CWV",
-                  "Meta Ads",
-                ].map((t) => (
-                  <span
-                    key={t}
-                    className="rounded-full border border-border bg-card px-3 py-1.5 text-xs text-muted-foreground"
-                  >
-                    {t}
-                  </span>
-                ))}
+                {["WordPress", "Shopify", "GA4", "Search Console", "Schema", "CWV", "Meta Ads"].map(
+                  (t) => (
+                    <span
+                      key={t}
+                      className="rounded-full border border-border bg-card px-3 py-1.5 text-xs text-muted-foreground"
+                    >
+                      {t}
+                    </span>
+                  ),
+                )}
               </div>
             </Reveal>
           </div>
@@ -74,13 +67,9 @@ export function About() {
                     <span className="absolute -left-[31px] top-8 h-3 w-3 rounded-full border-2 border-background bg-foreground" />
                     <div className="flex items-baseline justify-between gap-4">
                       <h3 className="font-display text-2xl md:text-3xl">{t.title}</h3>
-                      <span className="shrink-0 text-xs text-muted-foreground">
-                        {t.year}
-                      </span>
+                      <span className="shrink-0 text-xs text-muted-foreground">{t.year}</span>
                     </div>
-                    <p className="mt-3 text-sm text-muted-foreground md:text-base">
-                      {t.desc}
-                    </p>
+                    <p className="mt-3 text-sm text-muted-foreground md:text-base">{t.desc}</p>
                   </li>
                 </Reveal>
               ))}

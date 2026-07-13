@@ -11,6 +11,9 @@ import {
   Share2,
   Store,
   PenTool,
+  Code,
+  Braces,
+  Blocks,
 } from "lucide-react";
 
 const skills = [
@@ -25,6 +28,9 @@ const skills = [
   { name: "Social Media", icon: Share2, score: 80 },
   { name: "Shopify", icon: Store, score: 86 },
   { name: "Content Strategy", icon: PenTool, score: 88 },
+  { name: "React", icon: Code, score: 90 },
+  { name: "Next.js", icon: Blocks, score: 88 },
+  { name: "TypeScript", icon: Braces, score: 85 },
 ];
 
 const tools = [
@@ -34,6 +40,10 @@ const tools = [
   "SEMrush",
   "WordPress",
   "Shopify",
+  "React",
+  "Next.js",
+  "TypeScript",
+  "Vercel",
   "Canva",
   "Meta Ads",
   "Google Ads",
@@ -58,8 +68,8 @@ export function Skills() {
               </h2>
             </div>
             <p className="max-w-sm text-sm text-muted-foreground">
-              Eleven core disciplines, refined across audits, migrations and ecommerce
-              launches — paired with the industry-standard tools below.
+              Fourteen core disciplines, refined across audits, migrations, ecommerce launches and
+              full-stack web apps — paired with the industry-standard tools below.
             </p>
           </div>
         </Reveal>
@@ -72,9 +82,7 @@ export function Skills() {
                 <div className="group relative h-full overflow-hidden rounded-2xl border border-border bg-card p-5 transition hover:-translate-y-1 hover:border-foreground/30">
                   <div className="flex items-center justify-between">
                     <Icon className="h-5 w-5" strokeWidth={1.5} />
-                    <span className="text-xs font-medium text-muted-foreground">
-                      {s.score}
-                    </span>
+                    <span className="text-xs font-medium text-muted-foreground">{s.score}</span>
                   </div>
                   <div className="mt-10 text-sm font-medium">{s.name}</div>
                   <div className="mt-3 h-1 w-full overflow-hidden rounded-full bg-muted">
@@ -95,9 +103,7 @@ export function Skills() {
               <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
                 Daily-driver tools
               </div>
-              <div className="hidden text-xs text-muted-foreground md:block">
-                Stack · 2026
-              </div>
+              <div className="hidden text-xs text-muted-foreground md:block">Stack · 2026</div>
             </div>
             <div className="flex flex-wrap gap-2 p-6">
               {tools.map((t) => (

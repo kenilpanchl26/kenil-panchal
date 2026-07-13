@@ -69,8 +69,8 @@ export function Dashboard() {
               </h2>
             </div>
             <p className="max-w-sm text-sm text-muted-foreground">
-              Every project ends in a dashboard — clear KPIs, no vanity metrics. A
-              snapshot of what client reporting looks like.
+              Every project ends in a dashboard — clear KPIs, no vanity metrics. A snapshot of what
+              client reporting looks like.
             </p>
           </div>
         </Reveal>
@@ -122,10 +122,21 @@ export function Dashboard() {
                           <stop offset="100%" stopColor="currentColor" stopOpacity={0} />
                         </linearGradient>
                       </defs>
-                      <XAxis dataKey="d" tick={{ fontSize: 10 }} axisLine={false} tickLine={false} />
+                      <XAxis
+                        dataKey="d"
+                        tick={{ fontSize: 10 }}
+                        axisLine={false}
+                        tickLine={false}
+                      />
                       <YAxis tick={{ fontSize: 10 }} axisLine={false} tickLine={false} />
                       <Tooltip content={<TT />} />
-                      <Area type="monotone" dataKey="v" stroke="currentColor" strokeWidth={2} fill="url(#dash)" />
+                      <Area
+                        type="monotone"
+                        dataKey="v"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        fill="url(#dash)"
+                      />
                     </AreaChart>
                   </ResponsiveContainer>
                 </div>
@@ -201,8 +212,16 @@ export function Dashboard() {
                 </div>
                 <div className="h-48 text-foreground">
                   <ResponsiveContainer width="100%" height="100%">
-                    <BarChart data={seoMetrics} margin={{ top: 10, right: 8, left: -20, bottom: 0 }}>
-                      <XAxis dataKey="k" tick={{ fontSize: 10 }} axisLine={false} tickLine={false} />
+                    <BarChart
+                      data={seoMetrics}
+                      margin={{ top: 10, right: 8, left: -20, bottom: 0 }}
+                    >
+                      <XAxis
+                        dataKey="k"
+                        tick={{ fontSize: 10 }}
+                        axisLine={false}
+                        tickLine={false}
+                      />
                       <YAxis tick={{ fontSize: 10 }} axisLine={false} tickLine={false} />
                       <Tooltip content={<TT />} />
                       <Bar dataKey="v" fill="currentColor" radius={[6, 6, 0, 0]} />

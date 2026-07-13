@@ -149,7 +149,13 @@ function ChartFor({ type }: { type: Case["chart"] }) {
             strokeDasharray="4 4"
             fill="transparent"
           />
-          <Area type="monotone" dataKey="after" stroke="currentColor" fill="url(#g1)" strokeWidth={2} />
+          <Area
+            type="monotone"
+            dataKey="after"
+            stroke="currentColor"
+            fill="url(#g1)"
+            strokeWidth={2}
+          />
         </AreaChart>
       </ResponsiveContainer>
     );
@@ -208,10 +214,7 @@ export function CaseStudies() {
 
                   <ul className="mt-6 grid gap-2 sm:grid-cols-2">
                     {c.bullets.map((b) => (
-                      <li
-                        key={b}
-                        className="flex items-start gap-2 text-sm text-muted-foreground"
-                      >
+                      <li key={b} className="flex items-start gap-2 text-sm text-muted-foreground">
                         <span className="mt-1.5 inline-block h-1 w-3 shrink-0 bg-foreground" />
                         {b}
                       </li>
@@ -254,7 +257,11 @@ export function CaseStudies() {
                   <div className="mt-4 flex items-baseline justify-between">
                     <div>
                       <div className="text-xs text-muted-foreground">
-                        {c.chart === "bar" ? "Core Web Vitals" : c.chart === "line" ? "Revenue / week" : "Organic sessions"}
+                        {c.chart === "bar"
+                          ? "Core Web Vitals"
+                          : c.chart === "line"
+                            ? "Revenue / week"
+                            : "Organic sessions"}
                       </div>
                       <div className="font-display text-3xl">
                         {c.chart === "bar" ? "92" : c.chart === "line" ? "$14.2k" : "9.2k"}

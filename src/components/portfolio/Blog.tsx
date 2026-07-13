@@ -41,7 +41,7 @@ export function Blog() {
           <div className="flex items-end justify-between gap-6">
             <div>
               <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
-                06 — Writing
+                07 — Writing
               </div>
               <h2 className="mt-4 font-display text-4xl leading-[1.05] md:text-6xl">
                 Field notes & playbooks.
@@ -73,9 +73,7 @@ export function Blog() {
                 <div className="text-xs uppercase tracking-wider text-muted-foreground">
                   {p.cat}
                 </div>
-                <h3 className="mt-2 font-display text-xl leading-snug md:text-2xl">
-                  {p.title}
-                </h3>
+                <h3 className="mt-2 font-display text-xl leading-snug md:text-2xl">{p.title}</h3>
                 <div className="mt-auto flex items-center justify-between pt-6 text-xs text-muted-foreground">
                   <span>{p.date}</span>
                   <span>{p.read}</span>

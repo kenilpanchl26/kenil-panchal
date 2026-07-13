@@ -51,9 +51,8 @@ export function Hero() {
               transition={{ delay: 0.3, duration: 0.8 }}
               className="mt-8 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg"
             >
-              I help brands win the search game — combining technical SEO, GA4 analytics,
-              ecommerce optimization and conversion-led strategy to turn traffic into
-              measurable revenue.
+              I help brands win the search game — combining technical SEO, GA4 analytics, ecommerce
+              optimization and conversion-led strategy to turn traffic into measurable revenue.
             </motion.p>
 
             <motion.div

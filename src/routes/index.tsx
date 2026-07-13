@@ -6,6 +6,7 @@ import { About } from "../components/portfolio/About";
 import { Skills } from "../components/portfolio/Skills";
 import { CaseStudies } from "../components/portfolio/CaseStudies";
 import { Dashboard } from "../components/portfolio/Dashboard";
+import { Projects } from "../components/portfolio/Projects";
 import { Services } from "../components/portfolio/Services";
 import { Blog } from "../components/portfolio/Blog";
 import { Testimonials } from "../components/portfolio/Testimonials";
@@ -16,8 +17,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title:
-          "Kenilkumar Panchal — SEO & Digital Marketing Specialist | Ecommerce Growth",
+        title: "Kenilkumar Panchal — SEO & Digital Marketing Specialist | Ecommerce Growth",
       },
       {
         name: "description",
@@ -85,6 +85,7 @@ function Index() {
         <Skills />
         <CaseStudies />
         <Dashboard />
+        <Projects />
         <Services />
         <Blog />
         <Testimonials />

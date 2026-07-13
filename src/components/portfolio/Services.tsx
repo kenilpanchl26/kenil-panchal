@@ -59,7 +59,7 @@ export function Services() {
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <Reveal>
           <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
-            05 — Services
+            06 — Services
           </div>
           <h2 className="mt-4 max-w-3xl font-display text-4xl leading-[1.05] md:text-6xl">
             Eight ways I help brands grow on search.
